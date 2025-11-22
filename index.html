@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Darya Ulida</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- === HEADER === -->
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">Developer</div>
+
+            <nav class="header__nav">
+                <a href="#about" class="header__link">Обо мне</a>
+                <a href="#portfolio" class="header__link">Портфолио</a>
+                <a href="#contacts" class="header__link">Контакты</a>
+            </nav>
+
+            <button class="header__burger" type="button" aria-label="Открыть меню">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </button>
+        </div>
+    </header>
+
+
+    <!-- === HERO === -->
+    <section class="hero" id="hero">
+        <video class="hero__video" autoplay muted loop playsinline>
+            <source src="video/hero-bg.mp4" type="video/mp4">
+        </video>
+        <div class="hero__overlay"></div>
+
+        <div class="hero__glow hero__glow--left"></div>
+        <div class="hero__glow hero__glow--right"></div>
+
+        <div class="hero__card reveal">
+            <div class="hero__eyebrow">Frontend & WordPress</div>
+            <h1 class="hero__title">Разрабатываю современные сайты</h1>
+            <p class="hero__subtitle">
+                Верстка, анимации, UI-эффекты, формы с отправкой в Telegram/Email и проекты на WordPress —
+                по макету, по референсу или с нуля.
+            </p>
+            <div class="hero__tags">
+                <span class="hero__tag">HTML/CSS/JS</span>
+                <span class="hero__tag">WordPress</span>
+                <span class="hero__tag">Анимации</span>
+                <span class="hero__tag">UI/UX</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- === ABOUT === -->
+    <section class="about" id="about">
+        <div class="about__inner reveal">
+            <div class="section-header">
+                <span class="section-header__label">Обо мне</span>
+                <h2 class="section-header__title">Разработчик, который делает аккуратные интерфейсы</h2>
+            </div>
+
+            <p class="about__text">
+                Занимаюсь созданием адаптивных сайтов: лендинги, многостраничные проекты, блоги и корпоративные сайты.
+                Работаю с чистым кодом (HTML, CSS, JavaScript, PHP) и WordPress. Внимательно отношусь к деталям,
+                анимациям и удобству пользователя.
+            </p>
+
+            <div class="skills">
+                <div class="skills__grid">
+                    <div class="skills__item reveal">
+                        <div class="skills__icon">HTML</div>
+                        <div class="skills__name">Структурная верстка</div>
+                        <div class="skills__level">Семантика, БЭМ, адаптив</div>
+                    </div>
+                    <div class="skills__item reveal">
+                        <div class="skills__icon">CSS</div>
+                        <div class="skills__name">Стили и анимации</div>
+                        <div class="skills__level">Flex, Grid, эффекты, hover</div>
+                    </div>
+                    <div class="skills__item reveal">
+                        <div class="skills__icon">JS</div>
+                        <div class="skills__name">Интерактив</div>
+                        <div class="skills__level">Фильтры, модалки, логика</div>
+                    </div>
+                    <div class="skills__item reveal">
+                        <div class="skills__icon">WP</div>
+                        <div class="skills__name">WordPress</div>
+                        <div class="skills__level">Темы, кастомные решения</div>
+                    </div>
+                    <div class="skills__item reveal">
+                        <div class="skills__icon">PHP</div>
+                        <div class="skills__name">Формы и отправка</div>
+                        <div class="skills__level">Mail, Telegram, интеграции</div>
+                    </div>
+                    <div class="skills__item reveal">
+                        <div class="skills__icon">UI</div>
+                        <div class="skills__name">Дизайн интерфейсов</div>
+                        <div class="skills__level">Сетка, контраст, читаемость</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === PORTFOLIO === -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio__inner">
+            <div class="section-header reveal">
+                <span class="section-header__label">Портфолио</span>
+                <h2 class="section-header__title">Небольшая подборка реализованных проектов</h2>
+            </div>
+
+            <div class="portfolio__filters reveal">
+                <button class="portfolio__filters-btn active" data-filter="all">Все</button>
+                <button class="portfolio__filters-btn" data-filter="frontend">Frontend</button>
+                <button class="portfolio__filters-btn" data-filter="wordpress">WordPress</button>
+                <button class="portfolio__filters-btn" data-filter="landing">Лендинги</button>
+            </div>
+
+            <div class="portfolio__grid">
+
+                <a href="https://ooohimtorg.ru/" target="_blank" class="portfolio__item reveal" data-category="landing">
+                    <div class="portfolio__image">
+                        <img src="img/project3.jpg" alt="Лендинг услуги">
+                    </div>
+                    <div class="portfolio__body">
+                        <h3 class="portfolio__name">
+                            ХимТорг — сайт оптовой компании по поставкам бытовой химии
+                        </h3>
+                        <p class="portfolio__type">Лендинг</p>
+                    </div>
+                </a>
+
+                <a href="https://expert-dok.ru/" target="_blank" class="portfolio__item reveal"
+                    data-category="wordpress">
+                    <div class="portfolio__image">
+                        <img src="img/project5.jpg" alt="Сайт на WordPress">
+                    </div>
+                    <div class="portfolio__body">
+                        <h3 class="portfolio__name">
+                            Эксперт — многостраничный корпоративный сайт юридической компании
+                        </h3>
+                        <p class="portfolio__type">WordPress</p>
+                    </div>
+                </a>
+
+                <a href="http://ivanmobiledetailing.com/" target="_blank" class="portfolio__item reveal"
+                    data-category="landing">
+                    <div class="portfolio__image">
+                        <img src="img/project8.jpg" alt="Лендинг">
+                    </div>
+                    <div class="portfolio__body">
+                        <h3 class="portfolio__name">
+                            Ivan’s Mobile Detailing — сайт для мобильной автомойки
+                        </h3>
+                        <p class="portfolio__type">Лендинг</p>
+                    </div>
+                </a>
+
+                <a href="https://english-kids.github.io/english-kids-tutor/" target="_blank"
+                    class="portfolio__item reveal" data-category="landing">
+                    <div class="portfolio__image">
+                        <img src="img/project6.jpg" alt="Промо-лендинг">
+                    </div>
+                    <div class="portfolio__body">
+                        <h3 class="portfolio__name">
+                            Лендинг для репетитора английского языка
+                        </h3>
+                        <p class="portfolio__type">Лендинг</p>
+                    </div>
+                </a>
+
+                <a href="https://daryaulida.github.io/vitality-landing/" target="_blank" class="portfolio__item reveal"
+                    data-category="frontend">
+                    <div class="portfolio__image">
+                        <img src="img/project4.jpg" alt="UI интерфейс">
+                    </div>
+                    <div class="portfolio__body">
+                        <h3 class="portfolio__name">
+                            Виталити — рекламный лендинг транспортной компании
+                        </h3>
+                        <p class="portfolio__type">Frontend</p>
+                    </div>
+                </a>
+
+                <a href="https://melibrary.pro/" target="_blank" class="portfolio__item reveal"
+                    data-category="wordpress">
+                    <div class="portfolio__image">
+                        <img src="img/project7.jpg" alt="UI интерфейс">
+                    </div>
+                    <div class="portfolio__body">
+                        <h3 class="portfolio__name">
+                            Техническая библиотека по авиации
+                        </h3>
+                        <p class="portfolio__type">WordPress</p>
+                    </div>
+                </a>
+
+                <a href="https://daryaulida.github.io/SmartMirror/" target="_blank" class="portfolio__item reveal"
+                    data-category="landing">
+                    <div class="portfolio__image">
+                        <img src="img/project2.jpg" alt="Корпоративный сайт">
+                    </div>
+                    <div class="portfolio__body">
+                        <h3 class="portfolio__name">
+                            SmartMirror — информационный лендинг
+                        </h3>
+                        <p class="portfolio__type">Лендинг</p>
+                    </div>
+                </a>
+
+                <a href="https://daryaulida.github.io/BodyShape/" target="_blank" class="portfolio__item reveal"
+                    data-category="frontend">
+                    <div class="portfolio__image">
+                        <img src="img/project1.jpg" alt="Сайт компании">
+                    </div>
+                    <div class="portfolio__body">
+                        <h3 class="portfolio__name">
+                            BodyShape — промо-лендинг фитнес-клуба
+                        </h3>
+                        <p class="portfolio__type">Frontend</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- === CONTACTS === -->
+    <section class="contacts" id="contacts">
+        <div class="contacts__inner reveal">
+            <div class="section-header">
+                <span class="section-header__label">Контакты</span>
+                <h2 class="section-header__title">Связаться со мной</h2>
+            </div>
+
+            <div class="contacts__grid">
+                <a href="https://t.me/daria_ulida" class="contacts__item" target="_blank">
+                    <div class="contacts__icon">TG</div>
+                    <div class="contacts__label">Telegram</div>
+                </a>
+
+                <a href="mailto:DaryaUlida@gmail.com" class="contacts__item">
+                    <div class="contacts__icon">@</div>
+                    <div class="contacts__label">Email</div>
+                </a>
+
+                <a href="https://wa.me/375297813340" class="contacts__item" target="_blank">
+                    <div class="contacts__icon">WA</div>
+                    <div class="contacts__label">WhatsApp</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/filter.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
