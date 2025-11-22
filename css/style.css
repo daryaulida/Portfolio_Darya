@@ -584,49 +584,116 @@ section:not(.hero)::before {
 
 
 
-/* === RESPONSIVE === */
-@media (max-width: 960px) {
-    .header__inner {
-        padding-inline: 16px;
-    }
-
-    .hero__card {
-        padding: 34px 24px 26px;
-    }
-
-    .skills__grid {
-        grid-template-columns: repeat(2,minmax(0,1fr));
-    }
-
-    .portfolio__grid {
-        grid-template-columns: repeat(2,minmax(0,1fr));
-    }
-}
-
 @media (max-width: 640px) {
-    .header__inner {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        border-radius: 18px;
+
+    html, body {
+        overflow-x: hidden !important;
+        max-width: 100%;
     }
 
     .hero {
-        padding-top: 110px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        overflow: hidden;
+    }
+
+    .hero__card {
+        max-width: 100%;
+        padding: 20px 16px 18px;
+        border-radius: 18px;
+        margin-inline: auto;
+    }
+
+    .hero__title {
+        font-size: clamp(24px, 7vw, 32px);
+        line-height: 1.2;
+        margin-bottom: 12px;
+    }
+
+    .hero__subtitle {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 18px;
+    }
+
+    .hero__tag {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+
+    .hero__glow {
+        width: 220px;
+        height: 220px;
+        filter: blur(55px);
     }
 
     .skills__grid {
-        grid-template-columns: minmax(0,1fr);
+        grid-template-columns: 1fr;
     }
 
     .portfolio__grid {
-        grid-template-columns: minmax(0,1fr);
+        grid-template-columns: 1fr;
     }
 
     section:not(.hero) {
-        padding-inline: 16px;
+        padding-inline: 14px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 
+@media (max-width: 480px) {
+    .hero {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .hero__card {
+        max-width: 100%;
+        padding: 22px 18px;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+
+    .hero__title {
+        font-size: 26px;
+        line-height: 1.25;
+    }
+
+    .hero__subtitle {
+        font-size: 15px;
+        line-height: 1.55;
+        margin-bottom: 20px;
+    }
+
+    .hero__tags {
+        gap: 8px;
+    }
+
+    .hero__tag {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero {
+        padding-top: 10px;
+        padding-bottom: 16px;
+    }
+
+    .hero__card {
+        padding: 18px 14px;
+        border-radius: 18px;
+    }
+
+    .hero__title {
+        font-size: 22px;
+    }
+
+    .hero__subtitle {
+        font-size: 14px;
+    }
+}
 
 
